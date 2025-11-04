@@ -55,27 +55,28 @@ In this project:
 ---
 ---
 
-## Results — NASA Dataset
+---
+
+##  Results — NASA Dataset
 
 Below are comparison plots of Precision (P_af), Recall (R_af), and F1 (F1_af)  
 between the baseline **HP filter** and the proposed **STL filter** on NASA subsets (A-4, C-2, T-1).
 
 ###  Recall Comparison
-![NASA Recall Comparison](plots/NASA Recall.png)
+![NASA Recall Comparison](plots/NASA%20Recall.png)
 
 ###  F1 Score Comparison
-![NASA F1_af Comparison](plots/NASA F1.png)
+![NASA F1 _af Comparison](plots/NASA%20F1.png)
 
-### Precision Comparison
-![NASA P_af Comparison](plots/NASA Precision.png)
+###  Precision Comparison
+![NASA P_af Comparison](plots/NASA%20Precision%20.png)
 
 ---
 
 **Observations:**
-- Both HP and STL achieve high recall (~0.98–1.00) across all NASA subsets.  
-- STL slightly improves F1 on subset **T-1** and offers clearer trend–seasonality separation.  
-- HP performs marginally better in precision on subset **A-4**, but overall performance is comparable.  
-- STL’s smoother detrending provides better robustness for non-stationary signals.
+- Both HP and STL achieve high recall (~0.98–1.00) across all subsets.  
+- STL slightly improves F1 on subset T-1 and provides smoother trend–seasonality separation.  
+- HP performs marginally better in precision on A-4, but overall robustness favors STL.
 
 
 ## Data Preparation and Model Run
