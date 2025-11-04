@@ -61,28 +61,39 @@ Download the benchmark datasets and extract them into a local folder:
 ```bash
 unzip -d ./datasets datasets.zip
 
-
+---
+---
 ## Installation
 
 Clone the repository and install dependencies:
+
 ```bash
 git clone https://github.com/<your-username>/tsad-s6-stl.git
 cd tsad-s6-stl
 pip install -r requirements.txt
 
+---
+---
 
-##Baseline (HP filter)
+## Baseline (HP filter)
 
 Run the original implementation using the Hodrick–Prescott (HP) filter:
 
 ```bash
 python run_experiment.py --dataset NASA --detrend_method HP --tag hp
 
+---
+---
+
 ##Proposed Method (STL filter)
 
 Run the modified implementation using the Seasonal-Trend Decomposition (STL) filter:
+
 ```bash
 python run_experiment.py --dataset NASA --detrend_method STL --tag stl
+
+---
+---
 
 ## Results (Precision, Recall, and F1 scores) will be automatically saved in the ./results/ directory as CSV files.
 Example:
@@ -92,5 +103,6 @@ results/
 └─ SMD_result.csv
 
 
-
+---
+---
 
