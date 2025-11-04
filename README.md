@@ -29,8 +29,9 @@ in place of the original Hodrick–Prescott (HP) filter to improve robustness fo
 
 Each dataset contains multivariate time-series data with annotated anomalies,  
 commonly used as TSAD benchmarks.
-
 ---
+
+
 
 ## Implementation
 
@@ -51,6 +52,37 @@ In this project:
 - **NumPy, Pandas, Matplotlib** — data processing and visualization  
 
 ---
+---
+
+## Data Preparation
+
+Download the benchmark datasets and extract them into a local folder:
+
+```bash
+unzip -d ./datasets datasets.zip
+
+##Baseline (HP filter)
+
+Run the original implementation using the Hodrick–Prescott (HP) filter:
+
+```bash
+python run_experiment.py --dataset NASA --detrend_method HP --tag hp
+
+##Proposed Method (STL filter)
+
+Run the modified implementation using the Seasonal-Trend Decomposition (STL) filter:
+```bash
+python run_experiment.py --dataset NASA --detrend_method STL --tag stl
+
+## Results (Precision, Recall, and F1 scores) will be automatically saved in the ./results/ directory as CSV files.
+Example:
+
+results/
+├─ NASA_result.csv
+└─ SMD_result.csv
+
+
+
 
 ## Installation
 
