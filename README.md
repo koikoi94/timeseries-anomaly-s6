@@ -54,7 +54,7 @@ In this project:
 ---
 ---
 
-## Data Preparation
+## Data Preparation and Model Run
 
 Download the benchmark datasets and extract them into a local folder:
 
